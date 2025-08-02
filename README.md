@@ -1,8 +1,8 @@
-## Code for paper "Continual Adversarial Defense". 
+## Code for paper "Continual Adversarial Defense" (early version). 
 
 ## Get Started
 
-Datasets are CIFAR10.
+Datasets are CIFAR-10.
 
 Our codebase accesses the datasets from `./data/` and checkpoints from `./net_weights/` by default.
 ```
@@ -15,17 +15,17 @@ Our codebase accesses the datasets from `./data/` and checkpoints from `./net_we
 ├── ...
 ```
 
-All of the adversarial data are generated using torchattacks.
+All of the adversarial data is generated using torchattacks.
 Please configure config_cifar10.py first.
 
 
 ### Data
-Our data is converted to .pt formation. You can make adversarial data using make_adv_normal.py.
+Our data is converted to .pt format. You can make adversarial data using make_adv_normal.py.
 
 
 ### Pretrained Model
-You can download pretrained clean model from [here](https://huggingface.co/cc13qq/cifar10_wrn-28-10/tree/main).
-And put it to the direction './net_weights/Clean/wrn-28-10-dropout0.3.pth'.
+You can download a pretrained clean model from [here](https://huggingface.co/cc13qq/cifar10_wrn-28-10/tree/main).
+And put it in the direction './net_weights/Clean/wrn-28-10-dropout0.3.pth'.
 
 ### Run
 python cifar10_online.py 
